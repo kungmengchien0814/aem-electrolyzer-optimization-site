@@ -1,0 +1,7 @@
+case_id,channel_type,design_purpose,MEA_X_mm,MEA_Y_mm,channel_height_mm,porosity,temperature_C,u_in_m_per_s,Vcell_V,COMSOL_parameter_notes
+BASE_EXISTING,current_3D_model,Keep current geometry as reference,50,50,1.656,0.640,54.64,0.050,2.2,"Existing model range reaches u_in=0.05 m/s; use as validation baseline before changing geometry."
+OPT_CENTER_parallel,parallel_channels,Low pressure drop baseline for manufacturable comparison,50,50,1.656,0.640,54.64,0.104,2.0,"Use optimization center velocity; create straight parallel cathode/anode flow channels with same active area."
+OPT_CENTER_serpentine,serpentine_channel,Higher convection and residence time comparison,50,50,1.656,0.640,54.64,0.104,2.0,"Keep inlet velocity and MEA size fixed; compare pressure drop and H2 outlet concentration against parallel."
+OPT_CENTER_interdigitated,interdigitated_channels,Forced-through porous layer comparison,50,50,1.656,0.640,54.64,0.104,2.0,"Use blocked alternating outlet/inlet fingers; evaluate higher pressure-drop penalty versus H2 removal."
+LOW_FLOW_parallel,parallel_channels,Lower pump power point,50,50,1.51,0.610,51.6,0.084,2.0,"Lower bound from practical interval."
+HIGH_FLOW_parallel,parallel_channels,Higher gas removal point,50,50,1.81,0.670,57.6,0.124,2.0,"Upper bound from practical interval."
