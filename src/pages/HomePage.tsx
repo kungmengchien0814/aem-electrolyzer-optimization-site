@@ -230,7 +230,11 @@ export function HomePage() {
                   className={`team-member ${member.spacerBefore ? "spacer-before" : ""}`}
                 >
                   <span>{member.role}</span>
-                  <strong>{member.className}　{member.studentId}　{member.name}</strong>
+                  <strong>
+                    <span>{member.className}</span>
+                    <span>{member.studentId}</span>
+                    <span>{member.name}</span>
+                  </strong>
                 </article>
               ))}
             </div>

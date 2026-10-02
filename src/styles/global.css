@@ -557,8 +557,7 @@ h1 {
 }
 
 .result-row,
-.summary-card div,
-.about-card div {
+.summary-card div {
   display: grid;
   grid-template-columns: minmax(120px, 0.8fr) minmax(0, 1.2fr);
   gap: 12px;
@@ -567,21 +566,18 @@ h1 {
 }
 
 .result-row:last-child,
-.summary-card div:last-child,
-.about-card div:last-child {
+.summary-card div:last-child {
   border-bottom: 0;
 }
 
 .result-row span,
-.summary-card span,
-.about-card span {
+.summary-card span {
   color: var(--muted);
   font-weight: 750;
 }
 
 .result-row strong,
-.summary-card strong,
-.about-card strong {
+.summary-card strong {
   text-align: right;
 }
 
@@ -788,6 +784,7 @@ h1 {
 
 .team-list {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
   padding: 6px 0 18px;
   border-bottom: 1px solid #edf2f3;
@@ -806,7 +803,7 @@ h1 {
 }
 
 .team-topic span,
-.team-member span {
+.team-member > span {
   color: var(--muted);
   font-weight: 850;
 }
@@ -817,6 +814,21 @@ h1 {
   text-align: left;
   font-size: 18px;
   line-height: 1.6;
+}
+
+.team-member strong {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  min-width: 0;
+}
+
+.team-member strong > span {
+  white-space: nowrap;
+}
+
+.team-topic:last-child {
+  border-bottom: 0;
 }
 
 .site-footer {
@@ -893,7 +905,6 @@ h1 {
 
   .result-row,
   .summary-card div,
-  .about-card div,
   .team-topic,
   .team-member {
     grid-template-columns: 1fr;
@@ -901,7 +912,6 @@ h1 {
 
   .result-row strong,
   .summary-card strong,
-  .about-card strong,
   .team-topic strong,
   .team-member strong {
     text-align: left;
