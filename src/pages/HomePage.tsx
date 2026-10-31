@@ -226,13 +226,12 @@ export function HomePage() {
             <div className="team-list">
               {teamMembers.map((member) => (
                 <article
-                  key={member.studentId}
+                  key={member.name}
                   className={`team-member ${member.spacerBefore ? "spacer-before" : ""}`}
                 >
                   <span>{member.role}</span>
                   <strong>
                     <span>{member.className}</span>
-                    <span>{member.studentId}</span>
                     <span>{member.name}</span>
                   </strong>
                 </article>

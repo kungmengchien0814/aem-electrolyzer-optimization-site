@@ -9,9 +9,9 @@ export const site = {
 };
 
 export const teamMembers = [
-  { role: "組長", className: "四智三丙", studentId: "", name: "龔孟謙" },
-  { role: "組員", className: "四智三甲", studentId: "", name: "董聖潔", spacerBefore: true },
-  { role: "組員", className: "四智三甲", studentId: "", name: "吳翊瑋" }
+  { role: "組長", className: "四智三丙", name: "龔孟謙" },
+  { role: "組員", className: "四智三甲", name: "董聖潔", spacerBefore: true },
+  { role: "組員", className: "四智三甲", name: "吳翊瑋" }
 ];
 
 export const navItems = [
